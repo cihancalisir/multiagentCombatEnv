@@ -1,9 +1,9 @@
-from custom_marl_env.marlEnv.marl_env import MarlDefenseEnv, RandomAgent
+from marlEnv.marl_env import MarlDefenseEnv, RandomAgent
 import marlEnv
 import gym
 
-numAgents = 2
-env = gym.make("Bullet-v0", maxTimeStep=300, maxEpisode=100000, numAgents=numAgents, numEnemies=10, agentPower=10, enemyPower=2)
+numAgents = 4
+env = gym.make("Bullet-v0", maxTimeStep=300, maxEpisode=100000, numAgents=numAgents, numEnemies=10, agentPower=10, enemyPower=7)
 #MarlDefenseEnv(maxTimeStep=300, maxEpisode=100000, numAgents=numAgents, numEnemies=20, agentPower=10, enemyPower=2)
 agent = RandomAgent(numAgents=numAgents)
 
